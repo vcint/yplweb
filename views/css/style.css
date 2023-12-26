@@ -182,7 +182,7 @@
 
   /* main form container */
 #about-body{
-  background-color: #f8f9fa; /* Light grayish-blue background color */
+  background: linear-gradient(to right, #ffd700, #ff4500); /* Light grayish-blue background color */
   color: #343a40;
 }
 
@@ -249,6 +249,10 @@
     position:absolute;
 
 }
+.mapdscl{
+  padding-top: 19%;
+}
+
 
 
 
@@ -277,10 +281,7 @@
   }
 }
 
-#card-image{
-background:#fff;
-  background-image: url(https://png.pngtree.com/element_our/20190528/ourlarge/pngtree-faint-red-background-image_1181015.jpg);
-}
+
 
 .team-details{
 margin-top: 98px;
@@ -301,9 +302,14 @@ left: 30%;
 
 }
 
-/* .team-players{
-background-color:#808080;
-} */
+.team-players{
+padding: 3%;
+}
+@media (max-width:900px) {
+  .team-players{
+    padding: 10%;
+    }
+}
 
 /* #team-logo{
 border-radius: 20%;

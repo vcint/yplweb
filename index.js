@@ -61,6 +61,10 @@ app.get('/balaji-star', (req, res) => {
     res.sendFile(path.join(__dirname, 'views', 'balaji-star.html'));
 });
 
+app.use(function(req,res,next){
+    res.status(404).sendFile(path.join(__dirname,'views','error.html'))
+})
+
 
 // Start the server
 app.listen(port, () => {
